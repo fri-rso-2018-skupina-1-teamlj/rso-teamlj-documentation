@@ -1,0 +1,198 @@
+{
+	"info": {
+		"_postman_id": "eddedbc0-058e-486b-95c2-df87f9fe380c",
+		"name": "rso-bikes",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "localhost:8082/v1/bikes",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "localhost:8082/v1/bikes",
+					"host": [
+						"localhost"
+					],
+					"port": "8082",
+					"path": [
+						"v1",
+						"bikes"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:8082/v1/bikes/2",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "localhost:8082/v1/bikes/2",
+					"host": [
+						"localhost"
+					],
+					"port": "8082",
+					"path": [
+						"v1",
+						"bikes",
+						"2"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:8082/v1/bikes",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"latitude\": \"14.472840\",\n    \"longitude\": \"46.063990\",\n    \"status\": \"free\"\n}"
+				},
+				"url": {
+					"raw": "localhost:8082/v1/bikes",
+					"host": [
+						"localhost"
+					],
+					"port": "8082",
+					"path": [
+						"v1",
+						"bikes"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:8082/v1/bikes/4",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"id\": 4,\n    \"latitude\": \"14.472840\",\n    \"longitude\": \"56.063990\",\n    \"status\": \"free\"\n}"
+				},
+				"url": {
+					"raw": "localhost:8082/v1/bikes/4",
+					"host": [
+						"localhost"
+					],
+					"port": "8082",
+					"path": [
+						"v1",
+						"bikes",
+						"4"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:8082/v1/bikes/4",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "localhost:8082/v1/bikes/4",
+					"host": [
+						"localhost"
+					],
+					"port": "8082",
+					"path": [
+						"v1",
+						"bikes",
+						"4"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:8082/v1/bikes/1/taken",
+			"request": {
+				"method": "PATCH",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "localhost:8082/v1/bikes/1/taken",
+					"host": [
+						"localhost"
+					],
+					"port": "8082",
+					"path": [
+						"v1",
+						"bikes",
+						"1",
+						"taken"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:8082/v1/bikes/3/free",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"id\": 3,\n    \"latitude\": \"14.496590\",\n    \"longitude\": \"46.078018\"\n}"
+				},
+				"url": {
+					"raw": "localhost:8082/v1/bikes/3/free",
+					"host": [
+						"localhost"
+					],
+					"port": "8082",
+					"path": [
+						"v1",
+						"bikes",
+						"3",
+						"free"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
