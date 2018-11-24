@@ -1,0 +1,140 @@
+{
+	"info": {
+		"_postman_id": "18ed1505-8067-43c8-8bc9-b8ba3c78b951",
+		"name": "rso-map",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "localhost:8084/v1/map/",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "localhost:8084/v1/map/",
+					"host": [
+						"localhost"
+					],
+					"port": "8084",
+					"path": [
+						"v1",
+						"map",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:8084/v1/map/1 - get",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "localhost:8084/v1/map/1",
+					"host": [
+						"localhost"
+					],
+					"port": "8084",
+					"path": [
+						"v1",
+						"map",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:8084/v1/map - create",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"latitude\": 46.051168,\n    \"longitude\": 14.506203,\n    \"locationString\": \"46.051168+14.506203+\",\n    \"locationName\": \"Centr\",\n    \"numberOfAvailableBikes\": 2222\n}"
+				},
+				"url": {
+					"raw": "localhost:8084/v1/map",
+					"host": [
+						"localhost"
+					],
+					"port": "8084",
+					"path": [
+						"v1",
+						"map"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:8084/v1/map/1 - update",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"id\": 1,\n    \"latitude\": 46.051168,\n    \"longitude\": 14.506203,\n    \"locationString\": \"46.051168+14.506203+\",\n    \"locationName\": \"Centr-UPDATE\",\n    \"numberOfAvailableBikes\": 16\n}"
+				},
+				"url": {
+					"raw": "localhost:8084/v1/map/1",
+					"host": [
+						"localhost"
+					],
+					"port": "8084",
+					"path": [
+						"v1",
+						"map",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:8084/v1/map/1 - delete",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "localhost:8084/v1/map/1",
+					"host": [
+						"localhost"
+					],
+					"port": "8084",
+					"path": [
+						"v1",
+						"map",
+						"1"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
