@@ -1,36 +1,11 @@
 {
 	"info": {
-		"_postman_id": "87877d92-48cd-4080-b8d3-839feb32daa7",
+		"_postman_id": "2979ce4f-c203-4ef7-ac50-cf240c83597f",
 		"name": "rso-rents",
 		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
 	},
 	"item": [
 		{
-			"name": "http://localhost:8081/v1/rents/1",
-			"request": {
-				"method": "GET",
-				"header": [],
-				"body": {
-					"mode": "raw",
-					"raw": ""
-				},
-				"url": {
-					"raw": "http://localhost:8081/v1/rents/1",
-					"protocol": "http",
-					"host": [
-						"localhost"
-					],
-					"port": "8081",
-					"path": [
-						"v1",
-						"rents",
-						"1"
-					]
-				}
-			},
-			"response": []
-		},
-		{
 			"name": "http://localhost:8081/v1/rents",
 			"request": {
 				"method": "GET",
@@ -55,9 +30,34 @@
 			"response": []
 		},
 		{
+			"name": "http://localhost:8081/v1/rents/test",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://localhost:8081/v1/rents/test",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"v1",
+						"rents",
+						"test"
+					]
+				}
+			},
+			"response": []
+		},
+		{
 			"name": "http://localhost:8081/v1/rents/1",
 			"request": {
-				"method": "DELETE",
+				"method": "GET",
 				"header": [],
 				"body": {
 					"mode": "raw",
@@ -74,69 +74,6 @@
 						"v1",
 						"rents",
 						"1"
-					]
-				}
-			},
-			"response": []
-		},
-		{
-			"name": "http://localhost:8081/v1/rents?rentId=2",
-			"request": {
-				"method": "PUT",
-				"header": [
-					{
-						"key": "Content-Type",
-						"name": "Content-Type",
-						"value": "application/json",
-						"type": "text"
-					}
-				],
-				"body": {
-					"mode": "raw",
-					"raw": "{\n    \"bikeId\": 1,\n    \"dateOfRent\": \"2018-10-10T09:23:38Z\",\n    \"dateOfReturn\": \"2018-10-10T09:55:38Z\",\n    \"id\": 4,\n    \"latitudeOfRent\": \"46.078018\",\n    \"latitudeOfReturn\": \"46.063990\",\n    \"longitudeOfRent\": \"14.496590\",\n    \"longitudeOfReturn\": \"14.472840\",\n    \"userId\": 2\n}"
-				},
-				"url": {
-					"raw": "http://localhost:8081/v1/rents/4",
-					"protocol": "http",
-					"host": [
-						"localhost"
-					],
-					"port": "8081",
-					"path": [
-						"v1",
-						"rents",
-						"4"
-					]
-				}
-			},
-			"response": []
-		},
-		{
-			"name": "http://localhost:8081/v1/rents",
-			"request": {
-				"method": "POST",
-				"header": [
-					{
-						"key": "Content-Type",
-						"name": "Content-Type",
-						"value": "application/json",
-						"type": "text"
-					}
-				],
-				"body": {
-					"mode": "raw",
-					"raw": "{\n    \"bikeId\": 1,\n    \"dateOfRent\": \"2018-10-10T09:23:38Z\",\n    \"dateOfReturn\": \"2018-10-10T09:55:38Z\",\n    \"latitudeOfRent\": \"46.078018\",\n    \"latitudeOfReturn\": \"46.063990\",\n    \"longitudeOfRent\": \"14.496590\",\n    \"longitudeOfReturn\": \"14.472840\",\n    \"userId\": 3\n}"
-				},
-				"url": {
-					"raw": "http://localhost:8081/v1/rents",
-					"protocol": "http",
-					"host": [
-						"localhost"
-					],
-					"port": "8081",
-					"path": [
-						"v1",
-						"rents"
 					]
 				}
 			},
@@ -178,26 +115,153 @@
 			"response": []
 		},
 		{
-			"name": "http://localhost:8080/v1/users/1/rent/1",
+			"name": "http://localhost:8081/v1/rents",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"bikeId\": 1,\n    \"dateOfRent\": \"2018-10-10T09:23:38Z\",\n    \"dateOfReturn\": \"2018-10-10T09:55:38Z\",\n    \"latitudeOfRent\": \"46.078018\",\n    \"latitudeOfReturn\": \"46.063990\",\n    \"longitudeOfRent\": \"14.496590\",\n    \"longitudeOfReturn\": \"14.472840\",\n    \"userId\": 3\n}"
+				},
+				"url": {
+					"raw": "http://localhost:8081/v1/rents",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"v1",
+						"rents"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:8081/v1/rents/rentabike/1/2",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "localhost:8081/v1/rents/rentabike/1/2",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"v1",
+						"rents",
+						"rentabike",
+						"1",
+						"2"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:8081/v1/rents/returnabike/1/2/3",
 			"request": {
 				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"bikeId\": 2,\n    \"dateOfRent\": \"2018-10-11T09:23:38Z\",\n    \"dateOfReturn\": \"2018-10-10T09:55:38Z\",\n    \"id\": 1,\n    \"latitudeOfRent\": 46.07802,\n    \"latitudeOfReturn\": 46.06399,\n    \"longitudeOfRent\": 14.49659,\n    \"longitudeOfReturn\": 14.47284,\n    \"userId\": 1\n}"
+				},
+				"url": {
+					"raw": "localhost:8081/v1/rents/returnabike/1/2/3",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"v1",
+						"rents",
+						"returnabike",
+						"1",
+						"2",
+						"3"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8081/v1/rents/1",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{        \n\t\"bikeId\": 1,\n    \"dateOfRent\": \"2018-10-10T09:23:38Z\",\n    \"dateOfReturn\": \"2018-10-10T09:55:38Z\",\n    \"id\": 1,\n    \"latitudeOfRent\": 9999,\n    \"latitudeOfReturn\": 46.06399,\n    \"longitudeOfRent\": 14.49659,\n    \"longitudeOfReturn\": 14.47284,\n    \"userId\": 1\n}"
+				},
+				"url": {
+					"raw": "http://localhost:8081/v1/rents/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"v1",
+						"rents",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8081/v1/rents/1",
+			"request": {
+				"method": "DELETE",
 				"header": [],
 				"body": {
 					"mode": "raw",
 					"raw": ""
 				},
 				"url": {
-					"raw": "http://localhost:8080/v1/users/1/rent/1",
+					"raw": "http://localhost:8081/v1/rents/1",
 					"protocol": "http",
 					"host": [
 						"localhost"
 					],
-					"port": "8080",
+					"port": "8081",
 					"path": [
 						"v1",
-						"users",
-						"1",
-						"rent",
+						"rents",
 						"1"
 					]
 				}
