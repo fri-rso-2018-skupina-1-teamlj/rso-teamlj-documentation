@@ -1,0 +1,58 @@
+{
+	"info": {
+		"_postman_id": "c658ff7f-f059-4a31-9767-96c1ea74d3e8",
+		"name": "rso-notifications",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "localhost:8085/v1/notifications/1/46.050240&14.4691958",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "localhost:8085/v1/notifications/1/46.050240&14.4691958",
+					"host": [
+						"localhost"
+					],
+					"port": "8085",
+					"path": [
+						"v1",
+						"notifications",
+						"1",
+						"46.050240&14.4691958"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:8085/v1/notifications/ - test",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "localhost:8085/v1/notifications/",
+					"host": [
+						"localhost"
+					],
+					"port": "8085",
+					"path": [
+						"v1",
+						"notifications",
+						""
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
