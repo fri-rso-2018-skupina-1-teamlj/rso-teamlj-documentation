@@ -1,6 +1,6 @@
 {
 	"info": {
-		"_postman_id": "eddedbc0-058e-486b-95c2-df87f9fe380c",
+		"_postman_id": "466211ad-7b82-432c-871a-dd949ddc8248",
 		"name": "rso-bikes",
 		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
 	},
@@ -96,31 +96,7 @@
 				],
 				"body": {
 					"mode": "raw",
-					"raw": "{\n\t\"id\": 4,\n    \"latitude\": \"14.472840\",\n    \"longitude\": \"56.063990\",\n    \"status\": \"free\"\n}"
-				},
-				"url": {
-					"raw": "localhost:8082/v1/bikes/4",
-					"host": [
-						"localhost"
-					],
-					"port": "8082",
-					"path": [
-						"v1",
-						"bikes",
-						"4"
-					]
-				}
-			},
-			"response": []
-		},
-		{
-			"name": "localhost:8082/v1/bikes/4",
-			"request": {
-				"method": "DELETE",
-				"header": [],
-				"body": {
-					"mode": "raw",
-					"raw": ""
+					"raw": "{\n\t\"id\": 4,\n    \"latitude\": \"14.472840\",\n    \"longitude\": \"56.063990\",\n    \"status\": \"taken\"\n}"
 				},
 				"url": {
 					"raw": "localhost:8082/v1/bikes/4",
@@ -163,23 +139,23 @@
 			"response": []
 		},
 		{
-			"name": "localhost:8082/v1/bikes/3/free",
+			"name": "localhost:8082/v1/bikes/1/free",
 			"request": {
 				"method": "PUT",
 				"header": [
 					{
 						"key": "Content-Type",
 						"name": "Content-Type",
-						"value": "application/json",
-						"type": "text"
+						"type": "text",
+						"value": "application/json"
 					}
 				],
 				"body": {
 					"mode": "raw",
-					"raw": "{\n    \"id\": 3,\n    \"latitude\": \"14.496590\",\n    \"longitude\": \"46.078018\"\n}"
+					"raw": "{\n    \"id\": 2,\n    \"latitude\": 46.050243,\n    \"longitude\": 14.469195,\n    \"mapId\": 1,\n    \"status\": \"free\"\n}"
 				},
 				"url": {
-					"raw": "localhost:8082/v1/bikes/3/free",
+					"raw": "localhost:8082/v1/bikes/1/free/46.050242&14.4691958",
 					"host": [
 						"localhost"
 					],
@@ -187,8 +163,33 @@
 					"path": [
 						"v1",
 						"bikes",
-						"3",
-						"free"
+						"1",
+						"free",
+						"46.050242&14.4691958"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:8082/v1/bikes/1",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "localhost:8082/v1/bikes/1",
+					"host": [
+						"localhost"
+					],
+					"port": "8082",
+					"path": [
+						"v1",
+						"bikes",
+						"1"
 					]
 				}
 			},
