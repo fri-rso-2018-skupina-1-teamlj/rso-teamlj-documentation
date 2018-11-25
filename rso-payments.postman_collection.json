@@ -1,6 +1,6 @@
 {
 	"info": {
-		"_postman_id": "7a57c858-226f-4452-8b8b-acbb887535df",
+		"_postman_id": "1c8954ff-e40f-4732-83b7-7fa339ad62d3",
 		"name": "rso-payments",
 		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
 	},
@@ -83,6 +83,31 @@
 			"response": []
 		},
 		{
+			"name": "localhost:8083/v1/payments/pay/1",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "localhost:8083/v1/payments/pay/1",
+					"host": [
+						"localhost"
+					],
+					"port": "8083",
+					"path": [
+						"v1",
+						"payments",
+						"pay",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
 			"name": "localhost:8083/v1/payments/5",
 			"request": {
 				"method": "PUT",
@@ -114,55 +139,6 @@
 			"response": []
 		},
 		{
-			"name": "localhost:8083/v1/payments/5",
-			"request": {
-				"method": "DELETE",
-				"header": [],
-				"body": {
-					"mode": "raw",
-					"raw": ""
-				},
-				"url": {
-					"raw": "localhost:8083/v1/payments/5",
-					"host": [
-						"localhost"
-					],
-					"port": "8083",
-					"path": [
-						"v1",
-						"payments",
-						"5"
-					]
-				}
-			},
-			"response": []
-		},
-		{
-			"name": "localhost:8083/v1/payments/pay/1",
-			"request": {
-				"method": "POST",
-				"header": [],
-				"body": {
-					"mode": "raw",
-					"raw": ""
-				},
-				"url": {
-					"raw": "localhost:8083/v1/payments/pay/1",
-					"host": [
-						"localhost"
-					],
-					"port": "8083",
-					"path": [
-						"v1",
-						"payments",
-						"pay",
-						"1"
-					]
-				}
-			},
-			"response": []
-		},
-		{
 			"name": "localhost:8083/v1/payments/subscribed/1",
 			"request": {
 				"method": "PUT",
@@ -182,6 +158,58 @@
 						"payments",
 						"subscribed",
 						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:8083/v1/payments/subscribed/1",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "localhost:8083/v1/payments/subscribed/1",
+					"host": [
+						"localhost"
+					],
+					"port": "8083",
+					"path": [
+						"v1",
+						"payments",
+						"subscribed",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:8083/v1/payments/5",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "localhost:8083/v1/payments/5",
+					"host": [
+						"localhost"
+					],
+					"port": "8083",
+					"path": [
+						"v1",
+						"payments",
+						"5"
 					]
 				}
 			},
