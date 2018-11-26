@@ -1,114 +1,10 @@
 {
 	"info": {
-		"_postman_id": "754d30b5-6905-4f8a-9ff2-1cedc7bfa3e8",
+		"_postman_id": "89338f1d-9983-411a-810c-ecda86007d0c",
 		"name": "rso-user",
 		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
 	},
 	"item": [
-		{
-			"name": "http://localhost:8080/v1/users",
-			"event": [
-				{
-					"listen": "prerequest",
-					"script": {
-						"id": "98a5f41d-6b70-4027-8241-e50ddf835b02",
-						"exec": [
-							""
-						],
-						"type": "text/javascript"
-					}
-				},
-				{
-					"listen": "test",
-					"script": {
-						"id": "900ffd34-ebea-4a27-bc03-ef0d6972d7d2",
-						"exec": [
-							""
-						],
-						"type": "text/javascript"
-					}
-				}
-			],
-			"request": {
-				"method": "POST",
-				"header": [
-					{
-						"key": "Content-Type",
-						"name": "Content-Type",
-						"value": "application/json",
-						"type": "text"
-					}
-				],
-				"body": {
-					"mode": "raw",
-					"raw": "{\n    \"address\": \"Ravnik pri Hotedršici 6, 1372 Hotedršica\",\n    \"dateOfBirth\": \"1993-03-11T14:36:38Z\",\n    \"firstName\": \"Metka\",\n    \"inUse\": false,\n    \"lastName\": \"Petrič\"\n}"
-				},
-				"url": {
-					"raw": "http://localhost:8080/v1/users",
-					"protocol": "http",
-					"host": [
-						"localhost"
-					],
-					"port": "8080",
-					"path": [
-						"v1",
-						"users"
-					]
-				},
-				"description": "add new user"
-			},
-			"response": []
-		},
-		{
-			"name": "http://localhost:8080/v1/users/1",
-			"request": {
-				"method": "DELETE",
-				"header": [],
-				"body": {
-					"mode": "raw",
-					"raw": ""
-				},
-				"url": {
-					"raw": "http://localhost:8080/v1/users/1",
-					"protocol": "http",
-					"host": [
-						"localhost"
-					],
-					"port": "8080",
-					"path": [
-						"v1",
-						"users",
-						"1"
-					]
-				}
-			},
-			"response": []
-		},
-		{
-			"name": "http://localhost:8080/v1/users/2",
-			"request": {
-				"method": "GET",
-				"header": [],
-				"body": {
-					"mode": "raw",
-					"raw": ""
-				},
-				"url": {
-					"raw": "http://localhost:8080/v1/users/1",
-					"protocol": "http",
-					"host": [
-						"localhost"
-					],
-					"port": "8080",
-					"path": [
-						"v1",
-						"users",
-						"1"
-					]
-				}
-			},
-			"response": []
-		},
 		{
 			"name": "http://localhost:8080/v1/users",
 			"request": {
@@ -169,6 +65,85 @@
 			"response": []
 		},
 		{
+			"name": "http://localhost:8080/v1/users/2",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://localhost:8080/v1/users/2",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"v1",
+						"users",
+						"2"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/v1/users",
+			"event": [
+				{
+					"listen": "prerequest",
+					"script": {
+						"id": "98a5f41d-6b70-4027-8241-e50ddf835b02",
+						"exec": [
+							""
+						],
+						"type": "text/javascript"
+					}
+				},
+				{
+					"listen": "test",
+					"script": {
+						"id": "900ffd34-ebea-4a27-bc03-ef0d6972d7d2",
+						"exec": [
+							""
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"address\": \"Ravnik pri Hotedršici 6, 1372 Hotedršica\",\n    \"dateOfBirth\": \"1993-03-11T14:36:38Z\",\n    \"firstName\": \"Metka\",\n    \"inUse\": false,\n    \"lastName\": \"Petrič\"\n}"
+				},
+				"url": {
+					"raw": "http://localhost:8080/v1/users",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"v1",
+						"users"
+					]
+				},
+				"description": "add new user"
+			},
+			"response": []
+		},
+		{
 			"name": "http://localhost:8080/v1/users/4",
 			"request": {
 				"method": "PUT",
@@ -182,7 +157,32 @@
 				],
 				"body": {
 					"mode": "raw",
-					"raw": "{\n    \"address\": \"32 Threadneedle Street, London\",\n    \"dateOfBirth\": \"2006-01-01T14:36:38Z\",\n    \"email\": \"james.smith@gmail.com\",\n    \"firstName\": \"James\",\n    \"id\": 1,\n    \"inUse\": false,\n    \"lastName\": \"Smith\"\n}"
+					"raw": "{\n    \"address\": \"32 Threadneedle Street, London\",\n    \"dateOfBirth\": \"2006-01-01T14:36:38Z\",\n    \"email\": \"james.smith@gmail.com\",\n    \"firstName\": \"James\",\n    \"id\": 4,\n    \"inUse\": false,\n    \"lastName\": \"Smith\"\n}"
+				},
+				"url": {
+					"raw": "http://localhost:8080/v1/users/4",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"v1",
+						"users",
+						"4"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/v1/users/1",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
 				},
 				"url": {
 					"raw": "http://localhost:8080/v1/users/1",
@@ -210,7 +210,7 @@
 					"raw": ""
 				},
 				"url": {
-					"raw": "http://localhost:8080/v1/users/1/rent/1",
+					"raw": "http://localhost:8080/v1/users/1/rent/2",
 					"protocol": "http",
 					"host": [
 						"localhost"
@@ -221,14 +221,14 @@
 						"users",
 						"1",
 						"rent",
-						"1"
+						"2"
 					]
 				}
 			},
 			"response": []
 		},
 		{
-			"name": "http://localhost:8080/v1/users/1/return/4",
+			"name": "http://localhost:8080/v1/users/1/return/2/3",
 			"request": {
 				"method": "PUT",
 				"header": [],
@@ -237,7 +237,7 @@
 					"raw": ""
 				},
 				"url": {
-					"raw": "http://localhost:8080/v1/users/1/return/4",
+					"raw": "http://localhost:8080/v1/users/1/return/2/3",
 					"protocol": "http",
 					"host": [
 						"localhost"
@@ -248,14 +248,15 @@
 						"users",
 						"1",
 						"return",
-						"4"
+						"2",
+						"3"
 					]
 				}
 			},
 			"response": []
 		},
 		{
-			"name": "http://localhost:8080/v1/users/pay/3",
+			"name": "http://localhost:8080/v1/users/pay/1",
 			"request": {
 				"method": "GET",
 				"header": [],
@@ -264,7 +265,7 @@
 					"raw": ""
 				},
 				"url": {
-					"raw": "http://localhost:8080/v1/users/pay/3",
+					"raw": "http://localhost:8080/v1/users/pay/1",
 					"protocol": "http",
 					"host": [
 						"localhost"
@@ -274,7 +275,32 @@
 						"v1",
 						"users",
 						"pay",
-						"3"
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:8080/v1/users/subscribed/1",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "localhost:8080/v1/users/subscribed/1",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"v1",
+						"users",
+						"subscribed",
+						"1"
 					]
 				}
 			},
