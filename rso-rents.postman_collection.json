@@ -6,7 +6,7 @@
 	},
 	"item": [
 		{
-			"name": "http://localhost:8081/v1/rents",
+			"name": "http://35.228.145.26:8081/v1/rents",
 			"request": {
 				"method": "GET",
 				"header": [],
@@ -15,10 +15,13 @@
 					"raw": ""
 				},
 				"url": {
-					"raw": "http://localhost:8081/v1/rents",
+					"raw": "http://35.228.145.26:8081/v1/rents",
 					"protocol": "http",
 					"host": [
-						"localhost"
+						"35",
+						"228",
+						"145",
+						"26"
 					],
 					"port": "8081",
 					"path": [
@@ -55,7 +58,7 @@
 			"response": []
 		},
 		{
-			"name": "http://localhost:8081/v1/rents/1",
+			"name": "http://35.228.145.26:8081/v1/rents/",
 			"request": {
 				"method": "GET",
 				"header": [],
@@ -64,16 +67,19 @@
 					"raw": ""
 				},
 				"url": {
-					"raw": "http://localhost:8081/v1/rents/1",
+					"raw": "http://35.228.145.26:8081/v1/rents/",
 					"protocol": "http",
 					"host": [
-						"localhost"
+						"35",
+						"228",
+						"145",
+						"26"
 					],
 					"port": "8081",
 					"path": [
 						"v1",
 						"rents",
-						"1"
+						""
 					]
 				}
 			},
@@ -115,7 +121,7 @@
 			"response": []
 		},
 		{
-			"name": "http://localhost:8081/v1/rents",
+			"name": "http://35.228.145.26:8081/v1/rents",
 			"request": {
 				"method": "POST",
 				"header": [
@@ -131,10 +137,13 @@
 					"raw": "{\n    \"bikeId\": 1,\n    \"dateOfRent\": \"2018-10-10T09:23:38Z\",\n    \"dateOfReturn\": \"2018-10-10T09:55:38Z\",\n    \"latitudeOfRent\": \"46.078018\",\n    \"latitudeOfReturn\": \"46.063990\",\n    \"longitudeOfRent\": \"14.496590\",\n    \"longitudeOfReturn\": \"14.472840\",\n    \"userId\": 3\n}"
 				},
 				"url": {
-					"raw": "http://localhost:8081/v1/rents",
+					"raw": "http://35.228.145.26:8081/v1/rents",
 					"protocol": "http",
 					"host": [
-						"localhost"
+						"35",
+						"228",
+						"145",
+						"26"
 					],
 					"port": "8081",
 					"path": [
@@ -146,7 +155,7 @@
 			"response": []
 		},
 		{
-			"name": "localhost:8081/v1/rents/rentabike/1/2",
+			"name": "http://35.228.145.26:8081/v1/rents/rentabike/1/2",
 			"request": {
 				"method": "POST",
 				"header": [
@@ -161,9 +170,13 @@
 					"raw": ""
 				},
 				"url": {
-					"raw": "localhost:8081/v1/rents/rentabike/1/2",
+					"raw": "http://35.228.145.26:8081/v1/rents/rentabike/1/2",
+					"protocol": "http",
 					"host": [
-						"localhost"
+						"35",
+						"228",
+						"145",
+						"26"
 					],
 					"port": "8081",
 					"path": [
@@ -244,7 +257,7 @@
 			"response": []
 		},
 		{
-			"name": "http://localhost:8081/v1/rents/1",
+			"name": "http://35.228.145.26:8081/v1/rents/1",
 			"request": {
 				"method": "DELETE",
 				"header": [],
@@ -253,10 +266,13 @@
 					"raw": ""
 				},
 				"url": {
-					"raw": "http://localhost:8081/v1/rents/1",
+					"raw": "http://35.228.145.26:8081/v1/rents/1",
 					"protocol": "http",
 					"host": [
-						"localhost"
+						"35",
+						"228",
+						"145",
+						"26"
 					],
 					"port": "8081",
 					"path": [
@@ -265,6 +281,33 @@
 						"1"
 					]
 				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://35.228.145.26:8081/health",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://35.228.145.26:8081/health",
+					"protocol": "http",
+					"host": [
+						"35",
+						"228",
+						"145",
+						"26"
+					],
+					"port": "8081",
+					"path": [
+						"health"
+					]
+				},
+				"description": "http://35.228.145.26:8081/health"
 			},
 			"response": []
 		}

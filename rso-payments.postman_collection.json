@@ -139,7 +139,7 @@
 			"response": []
 		},
 		{
-			"name": "localhost:8083/v1/payments/subscribed/1",
+			"name": "35.228.153.117:8083/v1/payments/subscribed/3",
 			"request": {
 				"method": "PUT",
 				"header": [],
@@ -148,16 +148,19 @@
 					"raw": ""
 				},
 				"url": {
-					"raw": "localhost:8083/v1/payments/subscribed/1",
+					"raw": "35.228.153.117:8083/v1/payments/subscribed/3",
 					"host": [
-						"localhost"
+						"35",
+						"228",
+						"153",
+						"117"
 					],
 					"port": "8083",
 					"path": [
 						"v1",
 						"payments",
 						"subscribed",
-						"1"
+						"3"
 					]
 				}
 			},
@@ -210,6 +213,32 @@
 						"v1",
 						"payments",
 						"5"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://35.228.153.117:8083/health",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://35.228.153.117:8083/health",
+					"protocol": "http",
+					"host": [
+						"35",
+						"228",
+						"153",
+						"117"
+					],
+					"port": "8083",
+					"path": [
+						"health"
 					]
 				}
 			},

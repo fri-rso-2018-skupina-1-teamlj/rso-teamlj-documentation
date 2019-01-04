@@ -6,7 +6,7 @@
 	},
 	"item": [
 		{
-			"name": "localhost:8085/v1/notifications/1/46.050240&14.4691958",
+			"name": "http://35.228.188.52:8085/v1/notifications/1/46.050240&14.4691958",
 			"request": {
 				"method": "GET",
 				"header": [],
@@ -49,6 +49,32 @@
 						"v1",
 						"notifications",
 						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://35.228.188.52:8085/health",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://35.228.188.52:8085/health",
+					"protocol": "http",
+					"host": [
+						"35",
+						"228",
+						"188",
+						"52"
+					],
+					"port": "8085",
+					"path": [
+						"health"
 					]
 				}
 			},

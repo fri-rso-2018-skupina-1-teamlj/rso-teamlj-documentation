@@ -6,7 +6,7 @@
 	},
 	"item": [
 		{
-			"name": "localhost:8082/v1/bikes",
+			"name": "35.228.154.140:8082/v1/bikes",
 			"request": {
 				"method": "GET",
 				"header": [],
@@ -15,9 +15,12 @@
 					"raw": ""
 				},
 				"url": {
-					"raw": "localhost:8082/v1/bikes",
+					"raw": "35.228.154.140:8082/v1/bikes",
 					"host": [
-						"localhost"
+						"35",
+						"228",
+						"154",
+						"140"
 					],
 					"port": "8082",
 					"path": [
@@ -29,7 +32,7 @@
 			"response": []
 		},
 		{
-			"name": "localhost:8082/v1/bikes/2",
+			"name": "35.228.154.140:8082/v1/bikes/46.050242&14.4691958",
 			"request": {
 				"method": "GET",
 				"header": [],
@@ -38,15 +41,45 @@
 					"raw": ""
 				},
 				"url": {
-					"raw": "localhost:8082/v1/bikes/2",
+					"raw": "35.228.154.140:8082/v1/bikes/46.050243&14.469195",
 					"host": [
-						"localhost"
+						"35",
+						"228",
+						"154",
+						"140"
 					],
 					"port": "8082",
 					"path": [
 						"v1",
 						"bikes",
-						"2"
+						"46.050243&14.469195"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "35.228.154.140:8082/v1/bikes/1",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "35.228.154.140:8082/v1/bikes/1",
+					"host": [
+						"35",
+						"228",
+						"154",
+						"140"
+					],
+					"port": "8082",
+					"path": [
+						"v1",
+						"bikes",
+						"1"
 					]
 				}
 			},
@@ -190,6 +223,32 @@
 						"v1",
 						"bikes",
 						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "35.228.154.140:8082/health",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://35.228.154.140:8082/health",
+					"protocol": "http",
+					"host": [
+						"35",
+						"228",
+						"154",
+						"140"
+					],
+					"port": "8082",
+					"path": [
+						"health"
 					]
 				}
 			},

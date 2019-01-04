@@ -6,7 +6,7 @@
 	},
 	"item": [
 		{
-			"name": "localhost:8084/v1/map/",
+			"name": "http://35.228.252.155:8084/v1/map/",
 			"request": {
 				"method": "GET",
 				"header": [],
@@ -15,9 +15,13 @@
 					"raw": ""
 				},
 				"url": {
-					"raw": "localhost:8084/v1/map/",
+					"raw": "http://35.228.252.155:8084/v1/map/",
+					"protocol": "http",
 					"host": [
-						"localhost"
+						"35",
+						"228",
+						"252",
+						"155"
 					],
 					"port": "8084",
 					"path": [
@@ -131,6 +135,32 @@
 						"v1",
 						"map",
 						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://35.228.252.155:8084/health",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://35.228.252.155:8084/health",
+					"protocol": "http",
+					"host": [
+						"35",
+						"228",
+						"252",
+						"155"
+					],
+					"port": "8084",
+					"path": [
+						"health"
 					]
 				}
 			},

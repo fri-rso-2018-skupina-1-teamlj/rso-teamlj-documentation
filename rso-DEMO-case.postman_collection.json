@@ -1,0 +1,587 @@
+{
+	"info": {
+		"_postman_id": "4ae7f86e-c1ed-4a55-83bf-3fec16660f59",
+		"name": "rso-DEMO-case",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "1. INFO",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://35.228.18.253:8080/v1/info/info",
+					"protocol": "http",
+					"host": [
+						"35",
+						"228",
+						"18",
+						"253"
+					],
+					"port": "8080",
+					"path": [
+						"v1",
+						"info",
+						"info"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "2. GET USERS",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://35.228.18.253:8080/v1/users/",
+					"protocol": "http",
+					"host": [
+						"35",
+						"228",
+						"18",
+						"253"
+					],
+					"port": "8080",
+					"path": [
+						"v1",
+						"users",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "3. GET MAP",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://35.228.252.155:8084/v1/map",
+					"protocol": "http",
+					"host": [
+						"35",
+						"228",
+						"252",
+						"155"
+					],
+					"port": "8084",
+					"path": [
+						"v1",
+						"map"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "4. GET NEAREST POINTS",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://35.228.188.52:8085/v1/notifications/3/46.050240&14.4691958",
+					"protocol": "http",
+					"host": [
+						"35",
+						"228",
+						"188",
+						"52"
+					],
+					"port": "8085",
+					"path": [
+						"v1",
+						"notifications",
+						"3",
+						"46.050240&14.4691958"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "5. RENT BIKE BREZ PLAČANE NAROČNINE",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://35.228.18.253:8080/v1/users/3/rent/1",
+					"protocol": "http",
+					"host": [
+						"35",
+						"228",
+						"18",
+						"253"
+					],
+					"port": "8080",
+					"path": [
+						"v1",
+						"users",
+						"3",
+						"rent",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "6. PLAČA NAROČNINO",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://35.228.18.253:8080/v1/users/pay/3",
+					"protocol": "http",
+					"host": [
+						"35",
+						"228",
+						"18",
+						"253"
+					],
+					"port": "8080",
+					"path": [
+						"v1",
+						"users",
+						"pay",
+						"3"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "7. RENT BIKE Z PLAČANO NAROČNINO",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://35.228.18.253:8080/v1/users/3/rent/1",
+					"protocol": "http",
+					"host": [
+						"35",
+						"228",
+						"18",
+						"253"
+					],
+					"port": "8080",
+					"path": [
+						"v1",
+						"users",
+						"3",
+						"rent",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "8. GET RENTS",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://35.228.145.26:8081/v1/rents",
+					"protocol": "http",
+					"host": [
+						"35",
+						"228",
+						"145",
+						"26"
+					],
+					"port": "8081",
+					"path": [
+						"v1",
+						"rents"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "9. GET MAPE",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "35.228.252.155:8084/v1/map",
+					"host": [
+						"35",
+						"228",
+						"252",
+						"155"
+					],
+					"port": "8084",
+					"path": [
+						"v1",
+						"map"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "10. POGLEJ MAPO V BROWSERJU",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "35.228.252.155:8084",
+					"host": [
+						"35",
+						"228",
+						"252",
+						"155"
+					],
+					"port": "8084"
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "11. USTVARI NOVO MAPO",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"latitude\": 46.051168,\n    \"longitude\": 14.506203,\n    \"locationString\": \"46.051168+14.506203+\",\n    \"locationName\": \"Centr\",\n    \"numberOfAvailableBikes\": 0\n}"
+				},
+				"url": {
+					"raw": "35.228.252.155:8084/v1/map",
+					"host": [
+						"35",
+						"228",
+						"252",
+						"155"
+					],
+					"port": "8084",
+					"path": [
+						"v1",
+						"map"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "12. POGLEJ MAPO V BROWSERJU",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "35.228.252.155:8084",
+					"host": [
+						"35",
+						"228",
+						"252",
+						"155"
+					],
+					"port": "8084"
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "14. IZPIŠI USER ID 3",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://35.228.18.253:8080/v1/users/3",
+					"protocol": "http",
+					"host": [
+						"35",
+						"228",
+						"18",
+						"253"
+					],
+					"port": "8080",
+					"path": [
+						"v1",
+						"users",
+						"3"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "15. VRNITEV KOLESA NA NOVO LOKACIJO",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://35.228.18.253:8080/v1/users/3/return/RENTID/4",
+					"protocol": "http",
+					"host": [
+						"35",
+						"228",
+						"18",
+						"253"
+					],
+					"port": "8080",
+					"path": [
+						"v1",
+						"users",
+						"3",
+						"return",
+						"RENTID",
+						"4"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "16. GET MAPE Z VRNJENIM KOLESOM",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "35.228.252.155:8084/v1/map",
+					"host": [
+						"35",
+						"228",
+						"252",
+						"155"
+					],
+					"port": "8084",
+					"path": [
+						"v1",
+						"map"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "17. GET USERS",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://35.228.18.253:8080/v1/users/",
+					"protocol": "http",
+					"host": [
+						"35",
+						"228",
+						"18",
+						"253"
+					],
+					"port": "8080",
+					"path": [
+						"v1",
+						"users",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "18. USERS METRIKE",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://35.228.18.253:8080/metrics",
+					"protocol": "http",
+					"host": [
+						"35",
+						"228",
+						"18",
+						"253"
+					],
+					"port": "8080",
+					"path": [
+						"metrics"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "19. USERS HEALTH",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://35.228.18.253:8080/health",
+					"protocol": "http",
+					"host": [
+						"35",
+						"228",
+						"18",
+						"253"
+					],
+					"port": "8080",
+					"path": [
+						"health"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "20. FALSE HEALTHY",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"type": "text",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"healthy\": true\n}"
+				},
+				"url": {
+					"raw": "http://35.228.18.253:8080/v1/info/healthy",
+					"protocol": "http",
+					"host": [
+						"35",
+						"228",
+						"18",
+						"253"
+					],
+					"port": "8080",
+					"path": [
+						"v1",
+						"info",
+						"healthy"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "21. USERS HEALTH CHECK AGAIN",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://35.228.18.253:8080/health",
+					"protocol": "http",
+					"host": [
+						"35",
+						"228",
+						"18",
+						"253"
+					],
+					"port": "8080",
+					"path": [
+						"health"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "22. POKAŽI LOGE KIBANA",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "https://kibana.logit.io",
+					"protocol": "https",
+					"host": [
+						"kibana",
+						"logit",
+						"io"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
