@@ -1,0 +1,12 @@
+contextMap.uniqueRequestId: "e08e5673-d4f8-4380-9031-3b8835825851" AND contextMap.class: "si.fri.rso.teamlj.users.api.v1.resources.UsersResource"
+
+- izpis vseh vstopov v določeno metodo
+	contextMap.method: "getNotification" AND marker.name: ENTRY
+	
+- izpis dnevnikov določene mikrostoritve
+	contextMap.applicationName: rso-notifications
+	
+	(dnevniki ms z instanco)
+	contextMap.uniqueInstanceId:  97105106-ee24-468a-93f1-388c1b2dae3a
+	
+level: INFO -> (Initializing field for service: rso-rents version: * environment: dev)
